@@ -1,0 +1,4 @@
+django-admin startproject mysite - gera o diretório mysite contendo todo o esqueleto do projeto
+py manage.py startapp polls - cria o sistema 
+py manage.py runserver - roda o servidor no localhost
+py manage.py migrate - cria um banco de dados de acordo com as configurações fornecidas dentro do settings.py
