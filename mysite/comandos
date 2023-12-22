@@ -4,6 +4,7 @@ py manage.py runserver - roda o servidor no localhost
 py manage.py migrate - cria um banco de dados de acordo com as configurações fornecidas dentro do settings.py
 py manage.py makemigrations polls - informa ao django que existem mudanças nos modelos que precisam ser armazenadas como uma migração
 py manage.py check - checa problemas no projeto sem criar migrations ou alterar o banco de dados
+py manage.py shell - abre a shell do python com as infromações da API
 
 migrações permitem alterar o modelos ao longo do tempo, sem precisar alterar manualmente o banco de dados; para realizar essas mudanças siga esses passos: 
 1) mude os modelos em models.py;
