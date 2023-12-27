@@ -6,6 +6,7 @@ py manage.py makemigrations polls - informa ao django que existem mudanças nos 
 py manage.py check - checa problemas no projeto sem criar migrations ou alterar o banco de dados
 py manage.py shell - abre a shell do python e a partir daí pode executar os testes de API
 py manage.py createsuperuser - cria um usuario admin 
+py manage.py test polls - roda os testes que foram criados dentro do diretório polls
 
 migrações permitem alterar o modelos ao longo do tempo, sem precisar alterar manualmente o banco de dados; para realizar essas mudanças siga esses passos: 
 1) mude os modelos em models.py;
