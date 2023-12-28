@@ -8,6 +8,7 @@ py manage.py shell - abre a shell do python e a partir daí pode executar os tes
 py manage.py createsuperuser - cria um usuario admin 
 py manage.py test polls - roda os testes que foram criados dentro do diretório polls
 py -c "import django; print(django.__path__)" - caso queira encontrar onde estão os arquivos django no seu sistema
+py -m pip install django-debug-toolbar - ajuda a entender o funcionamento da aplicação e encontrar problemas
 
 migrações permitem alterar o modelos ao longo do tempo, sem precisar alterar manualmente o banco de dados; para realizar essas mudanças siga esses passos: 
 1) mude os modelos em models.py;
