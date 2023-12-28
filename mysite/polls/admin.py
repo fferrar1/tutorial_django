@@ -13,5 +13,8 @@ class QuestionAdmin(admin.ModelAdmin):
         ("Date Information", {"fields": ["pub_date"]}),
     ]
     inlines = [ChoiceInLine]
+    list_display = ["question_text", "pub_date", "was_published_recently"]
+    list_filter = ["pub_date"] #cria um filtro
+    search_fields = ["question_text"] #cria uma barra de pesquisa
 
 admin.site.register(Question, QuestionAdmin) #disponibiliza a Question criada na página do admin
