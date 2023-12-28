@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Question
+from .models import Choice, Question
 
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -9,3 +9,4 @@ class QuestionAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(Question) #disponibiliza a Question criada na página do admin
+admin.site.register(Choice)
